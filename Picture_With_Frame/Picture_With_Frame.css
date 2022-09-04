@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  margin: 200px auto;
+}
+
+.left-side {
+  width: 50%;
+  position: relative;
+}
+
+.left-side::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 60%;
+  height: 60%;
+  max-height: 180px;
+  max-width: 360px;
+  transform: translate(-50% , -50%);
+  border: 10px solid #9c6b5f;
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+
+.left-side::after {
+  content: "";
+  display:inline-block;
+  background:url(/Picture_With_Frame/img/photo-1508558936510-0af1e3cccbab.jfif) no-repeat 0 0;
+  background-size: 100% 90%;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  max-height: 150px;
+  max-width: 360px;
+  top: 50%;
+  left: 60%;
+  transform: translate( -70% , -45%);
+  -webkit-transform: translate( -70% , -45%);
+  -moz-transform: translate( -70% , -45%);
+  -ms-transform: translate( -70% , -45%);
+  -o-transform: translate( -70% , -45%);
+}
+
+.right-side {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 38px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  width: 100%;
+  color: #9c6b5f;
+  font-weight: lighter;
+  position: relative;
+  margin: 5px 0 10px 40px;
+  text-transform: none;
+  font-size: 18px;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #9c6b5f;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 0;
+  margin-top: -4px;
+  margin-left: -40px;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #9c6b5f;
+  width: 30px;
+  top: 50%;
+  left: 0;
+  margin-top: -0.5px;
+  margin-left: -37px;
+}
+
+p {
+  width: 100%;
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons div {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+i {
+  width: 100px;
+  text-align: center;
+  font-size: 45px;
+}
+
+.icons div::before {
+  content: "";
+  position: absolute;
+  border: 10px solid #9c6b5f;
+  border-bottom-color: transparent ;
+  border-left-color: transparent ;
+  top: 0;
+  right: 0;
+  margin: 4px;
+}
+
+h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
